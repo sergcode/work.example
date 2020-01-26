@@ -1,0 +1,65 @@
+mixin consultation
+  #modalConsultation.modal.fade.bd-example-modal-xl.consultation(tabindex="-1" role="dialog" aria-labelledby="consultation" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered.modal-md.consultation__modal-md
+      .modal-content.consultation__wrapper
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+        .consultation__content
+          h2.title.title__h2
+            | Получить консультацию
+          h5.title.title__h5.text__grey_two.mb-4
+            | Заполните форму и в течение 15 минут с Вами&nbsp;
+            br
+            | свяжется Ваш персональный менеджер
+          +five-stars('delimiter-five-stars__mb-61')
+          .consultation__form
+            .form.form_pr-0.style-form.mt-auto.clear
+              form#consultation.clear.form__theme.needs-validation(method='post' action='' role='form' novalidate name='consultation')
+                fieldset
+                  .form-row
+                    .col-lg-12.col-xl-12.form-head__input-container
+                      input#consultationUsername.form-control.consultation__input-theme(
+                      type="text"
+                      placeholder=""
+                      form='consultation'
+                      autocomplete='off'
+                      value=""
+                      pattern='^[a-zA-ZА-Яа-яЁё ]+$'
+                      title='Имя может содержать только буквы.'
+                      name='username'
+                      required
+                      data-bind="consultationForm.name"
+                      )
+                      label.form-head__label-theme.text.text__middle_less(for="consultationUsername")
+                        | Введите Ваше имя
+                      .invalid-tooltip
+                        | Введите Ваше имя
+
+                    .col-lg-12.col-xl-12.form-head__input-container.form-head__input-container_pb-32
+                      input#consultationEmail.form-control.consultation__input-theme(
+                      type="text"
+                      placeholder=""
+                      value=""
+                      name='email'
+                      form='consultation'
+                      autocomplete='off'
+                      required
+                      data-bind="consultationForm.email"
+                      )
+                      label.form-head__label-theme.text.text__middle_less.form-head__label-theme(for="consultationEmail")
+                        | Введите Ваш телефон или E-mail
+                      .invalid-tooltip.invalid-tooltip_delay_second
+                        | Введите Ваш телефон или e-mail
+
+                .consultation__button-group
+                  +button-big-gold-bg('', 'button', 'Отправить запрос', 'submit', 'button__animation-glare button__animation-glare_delay-1  button__mb-36')
+
+                .form-group
+                  .form-check
+                    input#consultationCheck.form-check-input(type="checkbox" value="" form='consultation' checked required)
+                    label.form-check-label(for="consultationCheck")
+                      | Подтверждая отправку формы Я соглашаюсь на обработку персональных данных и с&nbsp;
+                      a(href='https://rustransfer.org/docs/politika_konfidencialnosti.pdf' title='' target='_blank') политикой конфиденциальности
+                      | . Ни при каких обстоятельствах Ваши данные не будут переданы третьим лицам.
+
+                    .invalid-feedback
+                      | Это обязательное поле

@@ -1,0 +1,13 @@
+.class-auto {
+  position: relative;
+  background-color: $white-one;
+  &__grid-row {
+    display: grid;
+    grid-auto-rows: auto;
+    justify-content: center;
+    grid-gap: 15px;
+    &_col-3 {
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+}

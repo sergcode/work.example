@@ -1,0 +1,20 @@
+mixin cookie
+  .cookie
+    .container.container__customized_xl
+      .row.justify-content-between
+        .cookie__settings.cookie_mb-1.col-xl-8
+          p.cookie__text
+            | На сайте применяется обработка файлов cookie, помогающих создать максимально удобные условия использования&nbsp;
+            | для всех посетителей. С нашей&nbsp;
+            a(href='https://static.e-trans.me/albatros-bct.com/docs/politica_konfidencialnosti.pdf' title='' target='_blank') политикой конфиденциальности
+            | &nbsp;Вы можете ознакомиться&nbsp;
+            a(href='https://static.e-trans.me/albatros-bct.com/docs/politica_konfidencialnosti.pdf' title='' target='_blank') здесь
+            | .
+
+        .cookie__wrapper-button.col-xl-4
+
+          +button-small-gold-bg-cookie('', 'text_white cookie-button cookie-button__ml-auto cookie-button__mr-30', 'button', 'Принять', 'javascript:void(0)')
+          +button-small-gold-border-cookie-close('', 'button__small_close text_gold cookie-button', 'button', 'Закрыть', 'javascript:void(0)')
+
+
+

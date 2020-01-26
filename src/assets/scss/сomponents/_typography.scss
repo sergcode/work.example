@@ -1,0 +1,735 @@
+.title {
+
+  font-family: $francker-cyr-cond-medium;
+  letter-spacing: 0.05em;
+  color: $black-one;
+  z-index: 2;
+
+  &__mb {
+    margin-bottom: 142px;
+  }
+
+  &__h1 {
+
+    font-size: 64px;
+    line-height: 80px;
+    display: flex;
+    color: $white-one;
+    font-family: $francker-cyr-cond-regular;
+
+    @media only screen and (max-width: 1280px) {
+      line-height: 60px;
+      padding-right: 40%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 40px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      padding-right: 0;
+      font-size: 36px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 34px;
+      line-height: 50px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+  }
+
+  &__h2 {
+
+    font-size: 40px;
+    padding: 0 40px;
+    z-index: 1;
+    color: $black-one;
+    text-align: center;
+    font-family: $francker-cyr-cond-medium;
+
+    @media only screen and (max-width: 1280px) {
+      font-size: 38px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      font-size: 30px;
+    }
+
+    @media only screen and (max-width: 575px) {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 24px;
+      padding: 0 6px 10px;
+    }
+
+    &_pa-0 {
+
+      padding-left: 0;
+      padding-right: 0;
+
+    }
+
+  }
+
+  &__h3 {
+
+    font-size: 32px;
+    font-family: $verdana-regular;
+
+    @media only screen and (max-width: 1280px) {
+      font-size: 24px;
+    }
+
+  }
+
+  &__h4 {
+    font-size: 24px;
+    font-family: $verdana-regular;
+    line-height: 1.5em;
+  }
+
+  &__h5 {
+
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: $verdana-light;
+    text-align: center;
+    line-height: 1.5em;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 18px;
+    }
+
+  }
+
+  &__h6 {
+    font-size: 16px;
+    font-family: $francker-cyr-cond-light;
+  }
+
+  &__block {
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &_uppercase {
+
+    text-transform: uppercase;
+
+  }
+
+  &_pb-2 {
+
+    padding-bottom: 2rem;
+
+  }
+
+  &__line {
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:before {
+
+      content: '';
+      display: block;
+      position: absolute;
+      width: 50%;
+      border-top: 1px solid $gold-one;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 0;
+
+      @media only screen and (max-width: 1640px) {
+        top: 30px;
+        transform: translateY(0);
+      }
+
+      @media only screen and (max-width: 1280px) {
+        top: 20px;
+        transform: translateY(0);
+      }
+
+      @media only screen and (max-width: 576px) {
+        width: 10%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        top: 15px;
+      }
+
+    }
+
+    &_small {
+
+      z-index: 0;
+
+      &:before {
+
+        width: 8%;
+
+        @media only screen and (max-width: 1858px) {
+          margin-left: -40px;
+        }
+
+        @media only screen and (max-width: 1760px) {
+          margin-left: -60px;
+        }
+
+        @media only screen and (max-width: 1695px) {
+          margin-left: -80px;
+        }
+
+        @media only screen and (max-width: 1640px) {
+          margin-left: 0;
+        }
+
+        @media only screen and (max-width: 1470px) {
+          margin-left: -40px;
+        }
+
+        @media only screen and (max-width: 1380px) {
+          margin-left: -70px;
+        }
+
+        @media only screen and (max-width: 1290px) {
+          margin-left: -90px;
+        }
+
+        @media only screen and (max-width: 1280px) {
+          margin-left: 0;
+          width: 9%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+          margin-left: -50px;
+          width: 9%;
+        }
+
+        @media only screen and (max-width: 992px) {
+          margin-left: 0;
+          width: 17%;
+        }
+
+        @media only screen and (max-width: 768px) {
+          margin-left: 0;
+          width: 8%;
+        }
+
+        @media only screen and (max-width: 380px) {
+          width: 5%;
+        }
+
+      }
+
+    }
+
+    &_right {
+
+      &:before {
+
+        right: 0;
+
+      }
+
+    }
+
+    &_left {
+
+      &:before {
+
+        left: 0;
+
+      }
+
+    }
+
+  }
+
+  &__d-flex {
+
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__bg {
+
+    &_white {
+
+      background: $white-one;
+
+      @media only screen and (max-width: 576px) {
+        background: none;
+      }
+
+    }
+
+    &_grey {
+
+      background: $grey-four;
+
+    }
+
+  }
+
+  &__justify {
+
+    &_center {
+
+      justify-content: center;
+
+    }
+
+  }
+
+  &__wrapper {
+
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+
+    @media only screen and (max-width: 992px) {
+      visibility: visible;
+    }
+
+    .container__customized_xl {
+
+      z-index: 1000;
+
+    }
+
+  }
+
+  &_pt-3 {
+
+    padding-top: 3rem;
+
+    @media only screen and (max-width: 1640px) {
+      padding-top: 2rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding-top: 1rem;
+    }
+
+  }
+
+  &_pb-03 {
+
+    padding-bottom: .3rem;
+
+  }
+
+  &_ml-9 {
+
+    margin-left: 9rem;
+
+  }
+
+  &_gold {
+    color: $gold-one;
+  }
+
+}
+
+.text {
+
+  line-height: 132%;
+  letter-spacing: 0.05em;
+  color: $black-one;
+  font-family: $verdana-regular;
+
+  &__huge {
+
+    font-size: 72px;
+    font-family: $francker-cyr-cond-bold;
+
+    &_middle {
+
+      font-size: 26px;
+      font-family: $verdana-light;
+
+      @media only screen and (max-width: 1640px) {
+        font-size: 24px;
+        line-height: 1.3em;
+      }
+
+      @media only screen and (max-width: 1280px) {
+        font-size: 20px;
+        line-height: 1.3em;
+      }
+
+      @media only screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+
+      @media only screen and (max-width: 480px) {
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+
+    }
+
+  }
+
+  &__large {
+
+    text-transform: uppercase;
+    line-height: 49px;
+    font-size: 20px;
+    color: $black-two;
+
+    @media only screen and (max-width: 1640px) {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+
+    &_middle {
+
+      font-size: 18px;
+      font-family: $verdana-regular;
+      color: $black-one;
+
+    }
+
+    &_bold {
+
+      font-family: $francker-cyr-cond-bold;
+
+    }
+
+  }
+
+  &__large-subtitle {
+
+    line-height: 1.5em;
+    font-size: 24px;
+    color: $black-two;
+    letter-spacing: 0;
+
+    @media only screen and (max-width: 1640px) {
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      line-height: 1.3em;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 12px;
+      padding: 0 15px;
+    }
+
+  }
+
+  &__middle {
+
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.5em;
+
+    @media only screen and (max-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.4em;
+    }
+
+    br {
+
+      @media only screen and (max-width: 576px) {
+        display: none;
+      }
+
+    }
+
+    &_light {
+
+      font-family: $verdana-light;
+
+    }
+
+    &_bold {
+      font-family: $verdana-bold;
+    }
+
+    &_less {
+
+      font-size: 18px;
+      font-family: $verdana-light;
+
+      @media only screen and (max-width: 1640px) {
+        font-size: 15px;
+      }
+
+      @media only screen and (max-width: 992px) {
+        font-size: 12px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+
+      a {
+
+        font-size: 14px;
+        font-family: $verdana-light;
+        color: $gold-one;
+        text-decoration: underline;
+        transition: all .3s ease;
+
+        &:hover {
+
+          text-decoration: none;
+          color: $gold-one;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &__small {
+    font-size: 14px;
+    font-family: $verdana-regular;
+
+    &_light {
+      font-family: $verdana-light;
+    }
+
+    &_ultra {
+      font-size: 12px;
+    }
+
+  }
+
+  &__verdana {
+    &_normal {
+      font-family: $verdana-light;
+      line-height: 1.5em;
+    }
+    &_bold {
+      font-family: $verdana-semi-bold;
+    }
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+
+  &_white {
+    color: $white-one;
+  }
+
+  &__grey {
+
+    &_one {
+      color: $grey-one;
+    }
+
+    &_two {
+      color: $grey-two;
+    }
+
+    &_three {
+      color: $grey-three;
+    }
+
+  }
+
+  &_gold {
+    color: $gold-one;
+    p {
+      color: $gold-one;
+    }
+  }
+
+  &_mt-90 {
+    margin-top: 90px;
+    @media only screen and (max-width: 992px) {
+      margin-top: 65px;
+    }
+
+  }
+
+  &_mb-90 {
+    margin-top: 90px;
+  }
+
+  &_mb-70 {
+    margin-bottom: 70px;
+  }
+
+  &_mb-55 {
+    margin-bottom: 55px;
+  }
+
+  &_mb-35 {
+    margin-bottom: 35px;
+  }
+
+  &_pb-70 {
+    padding-bottom: 70px;
+  }
+
+  &_pb-51 {
+    padding-bottom: 51px;
+
+    @media only screen and (max-width: 1280px) {
+      padding-bottom: 14px;
+    }
+
+  }
+
+  &_pb-45 {
+    padding-bottom: 45px;
+  }
+
+  &_pb-20 {
+    padding-bottom: 20px;
+  }
+
+  &_pb-8 {
+
+    padding-bottom: 8rem;
+
+    @media only screen and (max-width: 576px) {
+      padding-bottom: 5rem;
+    }
+
+  }
+
+  &_pr-70 {
+
+    padding-right: 70%;
+
+    @media only screen and (max-width: 1640px) {
+      padding-right: 60%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      padding-right: 45%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      padding-right: 0;
+    }
+
+  }
+
+  &_pr-55 {
+
+    padding-right: 55%;
+
+    @media only screen and (max-width: 1640px) {
+      padding-right: 60%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      padding-right: 45%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      padding-right: 0;
+    }
+
+  }
+
+  &_pr-40 {
+
+    padding-right: 40%;
+
+    @media only screen and (max-width: 992px) {
+      padding-right: 23%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      padding-right: 0;
+    }
+
+  }
+
+  &_pr-30 {
+
+    padding-right: 30%;
+
+    @media only screen and (max-width: 1024px) {
+      padding-right: 0;
+    }
+
+  }
+
+  &_center {
+
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  &_right {
+
+    text-align: right;
+    justify-content: flex-end;
+
+  }
+
+  &_left {
+
+    text-align: left;
+    justify-content: flex-start;
+
+  }
+
+  &_end {
+
+    text-align: right;
+    justify-content: flex-end;
+
+  }
+
+  &_mt {
+
+    margin-top: auto;
+
+    @media only screen and (max-width: 992px) {
+      margin-top: 20px;
+    }
+
+  }
+
+}
+
+

@@ -1,0 +1,28 @@
+mixin tariffs(imgAuto, classAuto, modelsAuto, tariffsAuto, yearOne, yearTwo, yearThree, numPassengerSeats, numBaggage)
+  article.tariffs
+    figure
+      .tariffs__cars
+        img(src=staticImg + imgAuto alt=classAuto)
+      figcaption
+        h3.tariffs__title=classAuto
+        p.tariffs__subtitle!=modelsAuto /* ! - отключает защиту от ввода html тегов */
+        p.tariffs__text_gold
+          | Аренда от&nbsp;
+          span.text__middle_bold=tariffsAuto
+            strong &nbsp;₽
+            | /час
+        p.tariffs__text.tariffs__text_grey Год выпуска:
+        p.tariffs__text.tariffs__text_grey.tariffs__pb-1
+          span=yearOne
+          | &nbsp;
+          span=yearTwo
+          | &nbsp;
+          span=yearThree
+        .tariffs__passenger-baggage
+          div
+            +passenger
+            span=numPassengerSeats
+          div
+            +baggage
+            span=numBaggage
+        +button-middle-gold-border('', 'button__gold-border_delay-05 button__gold-border_gold-text', 'button', 'Расчитать стоимость', 'button', 'modal', '#modalConsultation')

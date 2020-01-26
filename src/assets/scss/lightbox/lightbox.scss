@@ -1,0 +1,67 @@
+.lb-cancel {
+  background: none;
+}
+.lb-nav {
+  a.lb-prev {
+    background: url('#{$static-icon}carousel/round-arrow-left-gold.svg') no-repeat left 20px top 48%;
+  }
+  a.lb-next {
+    background: url('#{$static-icon}carousel/round-arrow-right-gold.svg') no-repeat right 20px top 48%;
+  }
+}
+.lb-data {
+  .lb-close {
+    background: url('#{$static-icon}modal/round-close-gold.svg') top right no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-top: calc(-100% - 15rem);
+    position: absolute;
+    right: -70px;
+    top: 0;
+  }
+}
+
+.lb-dataContainer {
+  position: relative;
+}
+
+.lightboxOverlay {
+  z-index: 10000000;
+}
+
+.lightbox {
+  z-index: 10000000;
+
+  .lb-image {
+    position: relative;
+    border-radius: 0;
+    border: 30px solid #fff;
+
+    @media only screen and (min-width: 0) and (max-width: 379.98px) {
+      border: 20px solid #fff;
+      border-image: url('#{$static-thanksgiving-letters}frame-white.jpg') 48 stretch;
+    }
+
+    @media only screen and (min-width: 380px) {
+      border-image: url('#{$static-thanksgiving-letters}frame-white.jpg') 70 stretch;
+    }
+
+  }
+
+}
+
+.lb-container {
+
+  position: relative;
+
+}
+
+
+.lb-outerContainer {
+
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  position: relative;
+
+}

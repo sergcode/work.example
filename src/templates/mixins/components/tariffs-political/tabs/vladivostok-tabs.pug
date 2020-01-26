@@ -1,0 +1,66 @@
+mixin vladivostok-tabs
+  #vladivostok.tab-pane.tariffs-political__tab-pane.fade(role="tabpanel" aria-labelledby="vladivostok-tab")
+    .tariffs-political__carousel-wrapper
+      .fotorama.fotorama__tariffs-political(data-auto="false")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-one.jpg" data-caption="Mercedes E W213")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-two.jpg" data-caption="Mercedes E W213")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-three.jpg" data-caption="Mercedes E W213")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-four.jpg" data-caption="Mercedes E W213")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-five.jpg" data-caption="Mercedes E W213")
+
+    .tariffs-political__information
+      #accordionTariffsPoliticalVladivostok.tariffs-political__accordion
+
+        .tariffs-political__card
+          #vladivostokHeadingOne.tariffs-political__card-header
+            h2
+              button(type="button" data-toggle="collapse" data-target="#vladivostokCollapseOne" aria-expanded="true" aria-controls="vladivostokCollapseOne")
+                | Mercedes-Benz S class W222 Maybach
+          #vladivostokCollapseOne.collapse.show.tariffs-political__collapse(aria-labelledby="vladivostokHeadingOne" data-parent="#accordionTariffsPoliticalVladivostok")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        .tariffs-political__card
+          #vladivostokHeadingTwo.tariffs-political__card-header
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#vladivostokCollapseTwo" aria-expanded="false" aria-controls="vladivostokCollapseTwo")
+                | Mercedes-Benz S class W222
+          #vladivostokCollapseTwo.collapse.tariffs-political__collapse(aria-labelledby="vladivostokHeadingTwo" data-parent="#accordionTariffsPoliticalVladivostok")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        .tariffs-political__card
+          #vladivostokHeadingThree.tariffs-political__card-header
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#vladivostokCollapseThree" aria-expanded="false" aria-controls="vladivostokCollapseThree")
+                | Mercedes-Benz E class W213
+          #vladivostokCollapseThree.collapse.tariffs-political__collapse(aria-labelledby="vladivostokHeadingThree" data-parent="#accordionTariffsPoliticalVladivostok")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        .tariffs-political__card.tariffs-political__card_mb-40
+          #vladivostokHeadingFour.tariffs-political__card-header
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#vladivostokCollapseFour" aria-expanded="false" aria-controls="vladivostokCollapseFour")
+                | Mercedes-Benz V class
+          #vladivostokCollapseFour.collapse.tariffs-political__collapse(aria-labelledby="vladivostokHeadingFour" data-parent="#accordionTariffsPoliticalVladivostok")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+      +button-middle-gold-bg('button__animation-glare button__animation-glare_delay-1', 'button', 'Заказать автомобиль', 'button', 'modal', '#modalConsultation')

@@ -1,0 +1,118 @@
+// ROUND - MIDDLE - WHITE
+mixin button-left-middle-white-round(position, button, titleBut)
+  a.button.button__round.button__round_middle.button__round_white-border.button__round_animation-left(title=titleBut role=button class=position)
+    +arrow__white_left
+
+mixin button-right-middle-white-round(position, button, titleBut)
+  a.button.button__round.button__round_middle.button__round_white-border.button__round_animation-right(title=titleBut role=button class=position)
+    +arrow__white_right
+
+// ROUND - MIDDLE - GOLD
+mixin button-left-middle-gold-round(position, button, titleBut)
+  a.button.button__round.button__round_middle.button__round_gold-border.button__round_animation-left(title=titleBut role=button class=position)
+    +arrow__gold_left
+
+mixin button-right-middle-gold-round(position, button, titleBut)
+  a.button.button__round.button__round_middle.button__round_gold-border.button__round_animation-right(title=titleBut role=button class=position)
+    +arrow__gold_right
+
+// ROUND - BIG - WHITE
+mixin button-left-big-white-round(position, button, titleBut)
+  a.button.button__round.button__round_big.button__round_white-border.button__round_animation-left(title=titleBut role=button class=position)
+    +arrow__white_left
+
+mixin button-right-big-white-round(position, button, titleBut)
+  a.button.button__round.button__round_big.button__round_white-border.button__round_animation-right(title=titleBut role=button class=position)
+    +arrow__white_right
+
+// ROUND - BIG - GOLD
+mixin button-left-big-gold-round(position, button, titleBut, dataToggle, dataTarget)
+  a.button.button__round.button__round_big.button__round_gold-border.button__round_animation-left(title=titleBut role=button class=position data-toggle=dataToggle data-target=dataTarget)
+    +arrow__gold_left
+
+mixin button-right-big-gold-round(position, button, titleBut, dataToggle, dataTarget)
+  a.button.button__round.button__round_big.button__round_gold-border.button__round_animation-right(title=titleBut role=button class=position data-toggle=dataToggle data-target=dataTarget)
+    +arrow__gold_right
+
+// SMALL - GOLD -BORDER
+mixin button-small-gold-border(position, addClass, rolebutton, titleBut, typeButton)
+  button.button.button__small.button__gold-border.button__animation-right(role=rolebutton class=position class=addClass type=typeButton)
+    p=titleBut
+    +arrow__white_right
+    span
+
+// SMALL - GOLD - BORDER - CLOSE
+mixin button-small-gold-border-close(position, addClass, rolebutton, titleBut, typeButton, dataDismiss, ariaLabel)
+  button.button.button__small.button__gold-border.button__animation-right(role=rolebutton class=position class=addClass type=typeButton data-dismiss=dataDismiss aria-label=ariaLabel)
+    p=titleBut
+    span
+
+// SMALL - GOLD - BORDER - COOKIE - CLOSE
+mixin button-small-gold-border-cookie-close(position, addClass, rolebutton, titleBut, hrefScript)
+  a.button.button__small.button__small_center.button__gold-border.button__animation-right(role=rolebutton class=position class=addClass href=hrefScript)
+    p=titleBut
+    span
+      +arrow__white_right
+
+// SMALL - GOLD - BG
+mixin button-small-gold-bg(position, addClass, rolebutton, titleBut, typeButton)
+  button.button.button__small.button__gold-bg.button__animation-right(role=rolebutton class=position class=addClass type=typeButton)
+    p=titleBut
+    +arrow__white_right
+    span
+
+// SMALL - GOLD - BG - COOKIE
+mixin button-small-gold-bg-cookie(position, addClass, rolebutton, titleBut, hrefScript)
+  a.button.button__small.button__small_center.button__gold-bg.button__animation-right(role=rolebutton class=position class=addClass href=hrefScript)
+    p=titleBut
+    span
+      +arrow__white_right
+
+// SMALL - GOLD - BG - CLOSE
+mixin button-small-gold-bg-close(position, addClass, rolebutton, titleBut, typeButton, dataDismiss, ariaLabel)
+  button.button.button__small.button__gold-bg.button__animation-right(role=rolebutton class=position class=addClass type=typeButton data-dismiss=dataDismiss aria-label=ariaLabel)
+    p=titleBut
+    +arrow__white_right
+    span
+
+// MIDDLE - GOLD - BORDER
+mixin button-middle-gold-border(position, addClass, rolebutton, titleBut, typeButton, dataToggle, dataTarget)
+  button.button.button__middle.button__gold-border.button__animation-right.button__middle_icon(role=rolebutton class=position class=addClass type=typeButton data-toggle=dataToggle data-target=dataTarget)
+    p=titleBut
+    span
+      +arrow__gold_right
+
+// MIDDLE - GOLD - BG
+mixin button-middle-gold-bg(position, rolebutton, titleBut, typeButton, dataToggle, dataTarget)
+  button.button.button__middle.button__gold-bg.button__animation-right.button__middle_icon(role=rolebutton class=position type=typeButton data-toggle=dataToggle data-target=dataTarget)
+    p=titleBut
+    span
+      +arrow__white_right
+
+// BIG - GOLD - BORDER
+mixin button-big-gold-border(position, addClass, rolebutton, titleBut, typeButton, dataToggle, dataTarget)
+  button.button.button__big.button__gold-border.button__animation-right(role=rolebutton class=position class=addClass type=typeButton data-toggle=dataToggle data-target=dataTarget)
+    p=titleBut
+    span
+      +arrow__gold_right
+
+// BIG - GOLD - BG
+mixin button-big-gold-bg(position, rolebutton, titleBut, typeButton, addClass)
+  button.button.button__big.button__gold-bg.button__animation-right(role=rolebutton class=position type=typeButton class=addClass)
+    p=titleBut
+    span
+      +arrow__white_right
+
+// BIG - GOLD - BORDER - ARROW - DOWN
+mixin button-big-gold-arrow-down-border(position, rolebutton, titleBut, typeButton)
+  button.button.button__big.button__big_arrow-down.button__gold-border.button__animation-down(role=rolebutton class=addClass class=position type=typeButton)
+    p=titleBut
+    span
+      +arrow__white_right
+
+// BIG - GOLD - BG - ARROW - DOWN
+mixin button-big-gold-arrow-down-bg(position, rolebutton, titleBut, hrefLink)
+  a.button.button__big.button__big_arrow-down.button__gold-bg.button__animation-down(role=rolebutton class=position href=hrefLink)
+    p=titleBut
+    span
+      +arrow__white_right

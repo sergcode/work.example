@@ -1,0 +1,36 @@
+mixin success
+  #modalSuccess.modal.modal_theme.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+    .modal-dialog.modal-dialog__width.modal-dialog-centered(role="document")
+      .modal-content.modal-sending-message
+        .modal-body
+          article
+            figure
+              +successfully
+              figcaption.modal-sending-message__title Ваш запрос отправлен!
+              +five-stars('delimiter-five-stars__mb-23')
+              figcaption.modal-sending-message__text-small
+                | Спасибо за Ваш запрос!&nbsp;
+                br
+                | Ваш персональный менеджер свяжется с Вами&nbsp;
+                br
+                | в течение 15 минут.
+          hr
+          +button-small-gold-bg-close('', 'button__animation-glare button__animation-glare_delay-1 button__small_close text_white', 'button', 'Закрыть', 'button', 'modal', '')
+
+mixin unsuccess
+  #modalFailure.modal.modal_theme.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+    .modal-dialog.modal-dialog__width.modal-dialog-centered(role="document")
+      .modal-content.modal-sending-message
+        .modal-body
+          article
+            figure
+              +unsuccessfully
+              figcaption.modal-sending-message__title Ошибка при отправке запроса!
+              +five-stars('delimiter-five-stars__mb-23')
+              figcaption.modal-sending-message__text-small
+                | Ваш запрос не был отправлен.&nbsp;
+                br
+                | Пожалуйста, попробуйте еще раз.
+          hr
+          +button-small-gold-bg-close('', 'button__animation-glare button__animation-glare_delay-1 button__small_close text_white', 'button', 'Закрыть', 'button', 'modal', '')
+

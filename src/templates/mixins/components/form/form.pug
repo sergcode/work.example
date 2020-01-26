@@ -1,0 +1,81 @@
+mixin form-horizontal-white(colorTheme)
+  .form-horizontal.form-horizontal__white.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+    form#activityForm.clear.form-horizontal__wrapper.needs-validation(method='post' action='' role='form' novalidate name='activityForm')
+      fieldset
+        .form-row.form-horizontal_pb-18.form-horizontal__center
+          .form-horizontal__input-container
+            label.form-horizontal__hidden(for="validationActivityFormUsername")
+              | Введите название мероприятия
+            input#validationActivityFormUsername.form-control.form-horizontal__input-theme(
+            class=colorTheme
+            type="text"
+            placeholder="Введите название мероприятия"
+            form='activityForm'
+            autocomplete='off'
+            value=""
+            required
+            data-bind="activityForm.activity"
+            )
+            .invalid__wrapper
+              .invalid-tooltip.invalid-tooltip__horizontal
+                | Введите название мероприятия
+          .form-horizontal__input-container
+            label.form-horizontal__hidden(for="validationActivityFormPhone")
+              | Введите Ваш телефон или e-mail
+            input#validationActivityFormPhone.form-control.form-horizontal__input-theme(
+            class=colorTheme
+            type="text"
+            placeholder="Введите Ваш телефон или e-mail"
+            value=""
+            form='activityForm'
+            autocomplete='off'
+            required
+            data-bind="activityForm.email"
+            )
+            .invalid__wrapper.invalid__wrapper_delay_second
+              .invalid-tooltip.invalid-tooltip__horizontal
+                | Введите Ваш телефон или e-mail
+
+          +button-big-gold-bg('button__animation-glare button__animation-glare button__animation-glare_delay-1', 'button', 'Рассчитать', 'submit', '')
+
+
+mixin form-material-design
+  form#formMaterialDesign.clear.form-material-design.form-material-design__form.form__theme.needs-validation(method='post' action='' role='form' novalidate name='formMaterialDesign')
+    fieldset
+      .form-row
+        .col-lg-12.col-xl-12.form-head__input-container
+          input#formMaterialDesignUsername.form-control.form-head__input-theme(
+          type="text"
+          placeholder=""
+          form='formMaterialDesign'
+          autocomplete='off'
+          value=""
+          pattern='^[a-zA-ZА-Яа-яЁё ]+$'
+          title='Имя может содержать только буквы.'
+          name='username'
+          required
+          data-bind="formMaterialDesignForm.name"
+          )
+          label.form-head__label-theme.text.text_white.text__middle_less(for="formMaterialDesignUsername")
+            | Введите Ваше имя
+          .invalid-tooltip
+            | Это обязательное поле
+
+        .col-lg-12.col-xl-12.form-head__input-container
+          input#formMaterialDesignEmail.form-control.form-head__input-theme(
+          type="text"
+          placeholder=""
+          value=""
+          name='email'
+          form='formMaterialDesign'
+          autocomplete='off'
+          required
+          data-bind="formMaterialDesignForm.email"
+          )
+          label.form-head__label-theme.text.text_white.text__middle_less(for="formMaterialDesignEmail")
+            | Введите Ваш телефон или E-mail
+          .invalid-tooltip.invalid-tooltip_delay_second
+            | Это обязательное поле
+
+    +button-big-gold-bg('button__ml-auto button__animation-glare button__animation-glare_delay-1', 'button', 'Получить консультацию', 'submit', 'button__animation-glare button__mb-189')
+

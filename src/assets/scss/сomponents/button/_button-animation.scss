@@ -1,0 +1,168 @@
+// white-blik-left
+@keyframes glare_anim_left {
+  0% {
+    right: -300%
+  }
+  100% {
+    right: 200%
+  }
+}
+
+@-webkit-keyframes glare_anim_left {
+  0% {
+    right: -300%
+  }
+  100% {
+    right: 200%
+  }
+}
+
+// white-blik-right
+@keyframes glare_anim_right {
+  0% {
+    left: -300%
+  }
+  100% {
+    left: 200%
+  }
+}
+
+@-webkit-keyframes glare_anim_right {
+  0% {
+    left: -300%
+  }
+  100% {
+    left: 200%
+  }
+}
+
+// animation-arrow-left-in
+
+@keyframes arrow-left-anim-in {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes arrow-left-anim-in {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+// animation-arrow-right-in
+
+@keyframes arrow-right-anim-in {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes arrow-right-anim-in {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+// animation-arrow-down-in
+
+@keyframes arrow-down-anim-in {
+  from {
+    transform: translateX(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(90deg);
+  }
+  to {
+    transform: translateX(0) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes arrow-down-anim-in {
+  from {
+    transform: translateX(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(90deg);
+  }
+  to {
+    transform: translateX(0) rotate(90deg);
+  }
+}
+
+// animation-activity-arrow-up-in
+
+@keyframes arrow-up-anim-activity-in {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes arrow-up-anim-activity-in {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+// animation-activity-arrow-down-in
+
+@keyframes arrow-down-anim-activity-in {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes arrow-down-anim-activity-in {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+

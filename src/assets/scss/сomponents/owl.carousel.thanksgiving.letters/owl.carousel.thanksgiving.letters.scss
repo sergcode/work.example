@@ -1,0 +1,258 @@
+.owl-carousel {
+
+  &__thanksgiving-letters {
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    width: 1280px;
+    margin: 0 auto 72px;
+
+    @media only screen and (max-width: 480px) {
+      padding: 0 4rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+      padding: 0 2rem;
+    }
+
+    @media only screen and (max-width: 360px) {
+      padding: 0 1rem;
+    }
+
+    .owl-stage {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      align-items: start;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    .owl-stage-outer {
+
+      z-index: 10000;
+
+    }
+    &.owl-loaded {
+      display: flex;
+    }
+    .owl-item {
+      z-index: 20;
+    }
+    .item {
+      border: 25px solid #fff;
+      border-image: url('#{$static-thanksgiving-letters}preview-thanksgiving-letters/frame-white.jpg') 20 stretch;
+      transition: all .3s ease;
+      box-shadow: 5px 5px 10px 0 $black-rgba-nine;
+
+      &:hover {
+
+        transform: translateY(-25px);
+        opacity: .8;
+
+      }
+
+      a {
+
+        display: block;
+
+        img {
+
+          height: 260px;
+          min-height: 260px;
+          transition: all .5s ease;
+
+          &:hover {
+
+          }
+
+          @media only screen and (max-width: 1200px) {
+            min-height: 350px;
+            height: 350px;
+          }
+
+          @media only screen and (max-width: 991.98px) {
+            min-height: 400px;
+            height: 400px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            min-height: 300px;
+            height: 300px;
+          }
+
+          @media only screen and (max-width: 592.98px) {
+            min-height: 280px;
+            height: 280px;
+          }
+
+          @media only screen and (max-width: 480px) {
+            min-height: 350px;
+            height: 350px;
+          }
+
+          @media only screen and (max-width: 300px) {
+            min-height: 300px;
+            height: 300px;
+          }
+
+        }
+      }
+
+    }
+
+    .owl-nav {
+      position: absolute;
+      justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      z-index: 0;
+      transform: translateY(-40%);
+      top: 40%;
+
+      @media only screen and (min-width: 1200px) and (max-width: 1336px) {
+
+        position: absolute;
+        top: 100%;
+
+      }
+
+      @media only screen and (max-width: 1199.98px) {
+
+        margin-bottom: 0;
+        margin-top: 30px;
+        bottom: 0;
+        transform: translateY(0);
+        top: auto;
+        position: relative;
+
+      }
+
+      @media only screen and (max-width: 991.98px) {
+
+        margin-bottom: 0;
+        margin-top: 0;
+        bottom: -35px;
+        transform: translateY(0);
+        top: auto;
+        position: absolute;
+
+      }
+
+      @media only screen and (max-width: 768px) {
+        position: relative;
+        margin-bottom: 15px;
+      }
+
+      @media only screen and (max-width: 600px) {
+
+        justify-content: center;
+        position: relative;
+        bottom: -20px;
+        transform: translateY(0);
+        top: auto;
+        margin-bottom: 0;
+
+      }
+
+      .owl-next {
+        position: relative;
+        right: -100px;
+
+        @media only screen and (min-width: 992px) and (max-width: 1336px) {
+          right: 10%;
+          margin: auto;
+        }
+        @media only screen and (max-width: 991.98px) {
+          right: auto;
+          left: 0;
+          height: 60px;
+        }
+        @media only screen and (max-width: 600px) {
+          right: -20px;
+        }
+      }
+      .owl-prev {
+        position: relative;
+        left: -100px;
+
+        @media only screen and (min-width: 992px) and (max-width: 1336px) {
+
+          left: 10%;
+          margin: auto;
+          height: 60px;
+
+        }
+
+        @media only screen and (max-width: 991.98px) {
+
+          left: auto;
+          right: 0;
+          height: 60px;
+
+        }
+        @media only screen and (max-width: 600px) {
+
+          left: -20px;
+
+        }
+      }
+    }
+    .owl-dots {
+      margin: auto;
+      padding-top: 20px;
+
+      @media only screen and (max-width: 1199.9px) {
+        padding-top: 50px;
+      }
+      .owl-dot {
+
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        border: 2px solid $gold-one;
+        transition: all .2s;
+        padding: 0;
+        margin: 0 8px;
+        background: transparent;
+
+        &:hover {
+
+          background: $gold-one;
+          border: 2px solid transparent;
+
+        }
+
+        &.active {
+
+          background: $gold-one;
+          border: 2px solid transparent;
+
+        }
+
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  .owl-carousel-diploms {
+    .owl-nav {
+      .owl-next {
+        width: 40px;
+        height: 40px;
+        right: -55px;
+      }
+      .owl-prev {
+        width: 40px;
+        height: 40px;
+        left: -55px;
+      }
+    }
+  }
+}
+
+

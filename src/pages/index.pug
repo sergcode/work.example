@@ -1,0 +1,256 @@
+extends ../templates/layouts/default
+
+block vars
+  -
+    title = 'Home'
+    stylePath=''
+    staticImg = "https://static.e-trans.me/vip.albatros-bct/img/";
+    staticActivity = "https://static.e-trans.me/vip.albatros-bct/img/activity/";
+
+block content
+
+  main.main(role='main')
+    section#header.header-content(role="region")
+      .container.container__customized_md.container__customized_xl.container__customized_relative
+        .header-content__main-block
+          h1.title.title__h1.title__mb
+            | Аренда автомобиля&nbsp;
+            br
+            | VIP-класса с водителем&nbsp;
+            br
+            | в любом городе мира
+          +button-big-gold-border(
+          '',
+          'button__gold-border_animation-glare button__gold-border_delay-05 button__mb-189',
+          'button',
+          'Рассчитать поездку',
+          'button',
+          'modal', '#modalConsultation'
+          )
+          .feedback
+            .feedback__email
+              a(href='mailto:24@e-trans.me' title='Написать сообщение' role='link')
+                +mail
+                span 24@e-trans.me
+            .feedback__callback
+              a(href='tel:88002501717' title='Получить консультацию' role='link' data-toggle='modal' data-target='#modalConsultation')
+                +phone
+                span Обратный звонок
+    section#classAuto.class-auto(role="region")
+      .container.container__customized_md.container__customized_xl.container__customized_relative
+        h2.title.title__h2.mb-4 Классы автомобилей
+        h5.title.title__h5.text__grey_one.mb-4 В нашем парке автомобили новейшего модельного ряда
+        +five-stars('delimiter-five-stars__mb-6')
+        .class-auto__grid-row.class-auto__grid-row_col-3
+          +tariffs(
+          'tariffs/representative.png',
+          'Представительский',
+          'Mercedes-Maybach, Mercedes Benz S-222,<br/> Mercedes Benz S-221, Audi A8, BMW 7',
+          '2 600',
+          '2019 г.', '| 2018 г. |', '2017 г.',
+          '3', '3'
+          )
+          +tariffs(
+          'tariffs/business+.png',
+          'Бизнес+',
+          'Mercedes Benz E-213, Mercedes Benz E-212,<br/> Audi A6, BMW 5, Lexus LS 500',
+          '1 600',
+          '2019 г.', '| 2018 г. |', '2017 г.',
+          '3', '3'
+          )
+          +tariffs(
+          'tariffs/minivan-suite.png',
+          'Минивэн Люкс',
+          'Mercedes Benz V-class, Toyota Alphard,<br/> Hyundai H-1, Volkswagen Multivan',
+          '2 000',
+          '2019 г.', '| 2018 г. |', '2017 г.',
+          '5', '5'
+          )
+    section#tariffsPolitical.tariffs-political(role="region")
+      .container.container__customized_md.container__customized_xl.container__customized_relative
+        h2.title.title__h2.mb-4 Тарифная политика
+        h5.title.title__h5.text__grey_one.mb-4
+          | Все наши автомобили находятся в безупречном состоянии.
+          br
+          | Опытные, тактичные и внимательные водители никогда не подводят.
+        +five-stars('delimiter-five-stars__mb-6')
+        .tariffs-political__wrapper
+          ul#tariffsPoliticalTabs.nav.tariffs-political__block_left(role="tablist")
+            li.nav-item
+              a#moscow-tab.nav-link.active(data-toggle="tab" href="#moscow" role="tab" aria-controls="moscow" aria-selected="true") Москва
+            li.nav-item
+              a#petersburg-tab.nav-link(data-toggle="tab" href="#petersburg" role="tab" aria-controls="petersburg" aria-selected="false") Санкт-Петербург
+            li.nav-item
+              a#sochi-tab.nav-link(data-toggle="tab" href="#sochi" role="tab" aria-controls="sochi" aria-selected="false") Сочи
+            li.nav-item
+              a#novosibirsk-tab.nav-link(data-toggle="tab" href="#novosibirsk" role="tab" aria-controls="novosibirsk" aria-selected="false") Новосибирск
+            li.nav-item
+              a#vladivostok-tab.nav-link(data-toggle="tab" href="#vladivostok" role="tab" aria-controls="vladivostok" aria-selected="false") Владивосток
+          .tariffs-political__block_right
+            +button-middle-gold-border('button__mr-2', 'button__gold-border_delay-05 button__gold-border_gold-text', 'button', 'Города обслуживания РФ', 'submit', 'modal', '#citiesModal')
+            +button-middle-gold-border('', 'button__gold-border_delay-05 button__gold-border_gold-text', 'button', 'Страны обслуживания', 'submit', 'modal', '#countriesModal')
+        #tariffsPoliticalTabsContent.tab-content.tariffs-political__tab-content
+          +moscow-tabs
+          +petersburg-tabs
+          +sochi-tabs
+          +novosibirsk-tabs
+          +vladivostok-tabs
+    section#ourService.our-service(role="region")
+      .container.container__customized_md.container__customized_xl.container__customized_relative
+        h2.title.title__h2.mb-4 Наш сервис
+        h5.title.title__h5.text__grey_one.mb-4 Профессиональное решение любой трансферной задачи
+        +five-stars('delimiter-five-stars__mb-6')
+        .our-service__grid-wrapper
+          .our-service__grid
+            .our-service__grid_img
+              img(src=staticImg + 'our-service/img-corp.jpg' alt='Корпоративное обслуживание')
+            .our-service__grid_text
+              h3.title__h3.title__pb2 Корпоративное обслуживание
+              p.text__middle.text__middle_light.text_pb-20
+                | Предоставляем автомобили и минивэны с водителем, которые поведут Вас к успеху в бизнесе.
+                | Гарантируем наилучший комфорт и пунктуальность нашего сервиса.
+              +button-left-big-gold-round('button__round_m-auto button__animation-glare button__animation-glare_delay-1', 'button', 'Получить консультацию', 'modal', '#modalConsultation')
+
+          .our-service__grid
+            .our-service__grid_img
+              img(src=staticImg + 'our-service/img-tur.jpg' alt='Деловой туризм')
+            .our-service__grid_text
+              h3.title__h3.title__pb2 Деловой туризм
+              p.text__middle.text__middle_light.text_pb-20
+                | Профессиональный водитель доставит Вас в любое место по Вашему выбору.
+                | Запросите тур или поездку, которую Вы планируете. Мы все организуем для Вас на высочайшем уровне.
+              +button-left-big-gold-round('button__round_m-auto button__animation-glare button__animation-glare_delay-1', 'button', 'Получить консультацию', 'modal', '#modalConsultation')
+
+          .our-service__grid
+            .our-service__grid_text
+              h3.title__h3.title__pb2 Обслуживание делегаций и форумов
+              p.text__middle.text__middle_light.text_pb-20
+                | Предлагаем роскошные автомобили и минивэны для конференций, выставок,
+                | презентаций и других конгрессно-выставочных мероприятий.
+              +button-right-big-gold-round('button__round_m-auto button__animation-glare button__animation-glare_delay-1', 'button', 'Получить консультацию', 'modal', '#modalConsultation')
+            .our-service__grid_img
+              img(src=staticImg + 'our-service/img-forum.jpg' alt='Обслуживание делегаций и форумов')
+
+          .our-service__grid
+            .our-service__grid_text
+              h3.title__h3.title__pb2 Трансферное обслуживание
+              p.text__middle.text__middle_light.text_pb-20
+                | Встретим Вас в аэропорту или другом назначенном месте на одном из наших автомобилей или минивэнов
+                | с водителем и доставим в отель, гостиницу или другой город по Вашему запросу.
+              +button-right-big-gold-round('button__round_m-auto button__animation-glare button__animation-glare_delay-1', 'button', 'Получить консультацию', 'modal', '#modalConsultation')
+            .our-service__grid_img
+              img(src=staticImg + 'our-service/img-trans.jpg' alt='Трансферное обслуживание')
+    section#yourBenefit.your-benefit(role="region")
+      .container.container__customized_md.container__customized_xl.container__customized_relative
+        h2.title.title__h2.mb-4 Ваша выгода при работе с нами
+        h5.title.title__h5.text__grey_one.mb-4 Сервис, который завоевал сердца сотен наших корпоративных клиентов
+        +five-stars('delimiter-five-stars__mb-6')
+        .your-benefit__grid-wrapper
+          article
+            figure
+              +support
+              p.text__large_middle Круглосуточная поддержка персональным менеджером 24/7 на русском и английском языках
+
+          article
+            figure
+              +warranty
+              p.text__large_middle Гарантия полной конфиденциальности информации
+
+          article
+            figure
+              +individual-conditions
+              p.text__large_middle Индивидуальные условия для каждого клиента
+
+          article
+            figure
+              +driver
+              p.text__large_middle Профессиональный и вежливый водитель в костюме со стажем от 10 лет
+
+          article
+            figure
+              +car-park
+              p.text__large_middle Проверенный парк автомобилей и минивэнов
+    section#reviews.reviews-customer(role="region")
+      .container.container__customized_md.container__customized_xl.container__customized_relative
+        h2.title.title__h2.mb-4 Отзывы корпоративных клиентов
+        h5.title.title__h5.text__grey_one.mb-4 С нами сотрудничают более 753 российских и иностранных компаний
+        +five-stars('delimiter-five-stars__mb-74')
+        +owl-carousel-thanksgiving-letters
+        +button-big-gold-arrow-down-bg('button__animation-glare button__animation-glare_delay-1 button__big_m-auto', 'button', 'Скачать благодарственные письма', 'https://static.e-trans.me/thanksgiving-letters/thanksgiving-letters.zip')
+    section#activity.activity(role="region")
+      .container.container__customized_md.container__customized_xl.container__customized_relative
+        h2.title.title__h2.mb-4 Мероприятия
+        h5.title.title__h5.text__grey_one.mb-4 Предстоящие конгрессно-выставочные форумы
+        +five-stars('')
+        .fotorama.activity__fotorama(data-auto="false" data-nav="thumbs")
+
+          .activity__fotorama_slide(data-thumb=staticActivity + "preview/activity_one/activity_one_logo.jpg")
+            .activity__fotorama_img
+              img(src=staticActivity + "activity_one.jpg" alt='')
+              .activity__fotorama_data
+                p.activity__fotorama_text-big 20-24
+                p.activity__fotorama_text-small Января
+            .activity__fotorama_text
+              h4.title.title__h4 Всемирный экономический форум (ВЭФ-2020)
+              p.text.text__middle.text__middle_light
+                | Главным мероприятием ВЭФ являются ежегодные встречи, которые проводятся традиционно на всемирно
+                | известном горнолыжном курорте Давос в конце января - начале февраля, на которых члены ВЭФ обсуждают
+                | ключевые проблемы мировой экономики. На эти встречи приглашаются ведущие государственные и
+                | политические деятели, представители научных, деловых кругов различных стран и международных организаций.
+                | Советская делегация впервые приняла участие в форуме в 1987 году. Россия, как суверенное государство,
+                | участвует в давосских встречах с 1992 года.
+
+          .activity__fotorama_slide(data-thumb=staticActivity + "preview/activity_two/activity_two_logo.jpg")
+            .activity__fotorama_img
+              img(src=staticActivity + "activity_two.jpg" alt='')
+              .activity__fotorama_data
+                p.activity__fotorama_text-big 22-24
+                p.activity__fotorama_text-small Января
+            .activity__fotorama_text
+              h4.title.title__h4 Евразийского ИВЕНТ форума (EFEA-2020)
+              p.text.text__middle.text__middle_light
+                | Евразийский Ивент Форум (EFEA) — это уникальная коммуникационная площадка для специалистов ивент
+                | отрасли, организаторов выставок, форумов и конференций, специалистов делового и инсентив туризма.
+                | EFEA проводится с 2012 года. За 8 лет проведения Евразийский Ивент Форум приобрел статус авторитетного
+                | события для специалистов ивент индустрии и на сегодняшний день является одним из самых главных
+                | мероприятий делового календаря, традиционно открывающего конгрессно-выставочный сезон в Санкт-Петербурге.
+                | EFEA предоставляет участникам возможность получить актуальную информацию о состоянии и перспективах
+                | развития конгрессно-выставочной и ивент отрасли от профессионалов мирового уровня, а также расширить
+                | круг деловых контактов.
+
+          .activity__fotorama_slide(data-thumb=staticActivity + "preview/activity_three/activity_three_logo.jpg")
+            .activity__fotorama_img
+              img(src=staticActivity + "activity_three.jpg" alt='')
+              .activity__fotorama_data
+                p.activity__fotorama_text-big 12-14
+                p.activity__fotorama_text-small Февраля
+            .activity__fotorama_text
+              h4.title.title__h4 Российский инвестиционный форум (РИФ-2020)
+              p.text.text__middle.text__middle_light
+                | Ежегодный Российский инвестиционный форум (РИФ-2020) пройдет 12-14 февраля 2020 года в Сочи.
+                | РИФ – это традиционная площадка для презентации инвестиционного и экономического потенциала России,
+                | зарекомендовавшее себя как одно из самых значимых и крупных мероприятий в экономике России.
+                | В Форуме традиционно принимают участие практически все регионы страны и крупнейшие российские
+                | компании, что позволяет вести прямой диалог бизнеса и власти. Форум проходит при участии Председателя
+                | Правительства РФ Дмитрия Медведева.
+
+        .activity__form.container.container__customized_lg
+          p.text.text__large-subtitle.text_center
+            | Участвуете в конгрессно-выставочных форумах и мероприятиях?&nbsp;
+            br
+            | Получите расчет стоимости на автотранспортное обслуживание&nbsp;
+            br
+            | интересующего Вас мероприятия
+          +form-horizontal-white('')
+    section#beforeFooter.before-footer(role="region")
+      .container.container__customized_md.container__customized_lg.container__customized_relative
+        h2.title.title__h2.text_white.mb-4 Мы ответим на любые Ваши вопросы
+        h5.title.title__h5.text_white.mb-4
+          | Заполните форму и в течение 15 минут с Вами свяжется
+          br
+          | Ваш персональный менеджер
+        +five-stars('delimiter-five-stars__mb-120')
+        .before-footer__form-wrapper
+          +form-material-design
+
+

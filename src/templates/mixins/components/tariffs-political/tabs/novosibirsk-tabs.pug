@@ -1,0 +1,66 @@
+mixin novosibirsk-tabs
+  #novosibirsk.tab-pane.tariffs-political__tab-pane.fade(role="tabpanel" aria-labelledby="novosibirsk-tab")
+    .tariffs-political__carousel-wrapper
+      .fotorama.fotorama__tariffs-political(data-auto="false")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-one.jpg" data-caption="Mercedes E W213")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-two.jpg" data-caption="Mercedes E W213")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-three.jpg" data-caption="Mercedes E W213")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-four.jpg" data-caption="Mercedes E W213")
+        img(src=staticImg + "tariffs-political/mersedes-benz-e-class-w213-five.jpg" data-caption="Mercedes E W213")
+
+    .tariffs-political__information
+      #accordionTariffsPoliticalNovosibirsk.tariffs-political__accordion
+
+        .tariffs-political__card
+          #novosibirskHeadingOne.tariffs-political__card-header
+            h2
+              button(type="button" data-toggle="collapse" data-target="#novosibirskCollapseOne" aria-expanded="true" aria-controls="novosibirskCollapseOne")
+                | Mercedes-Benz S class W222 Maybach
+          #novosibirskCollapseOne.collapse.show.tariffs-political__collapse(aria-labelledby="novosibirskHeadingOne" data-parent="#accordionTariffsPoliticalNovosibirsk")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        .tariffs-political__card
+          #novosibirskHeadingTwo.tariffs-political__card-header
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#novosibirskCollapseTwo" aria-expanded="false" aria-controls="novosibirskCollapseTwo")
+                | Mercedes-Benz S class W222
+          #novosibirskCollapseTwo.collapse.tariffs-political__collapse(aria-labelledby="novosibirskHeadingTwo" data-parent="#accordionTariffsPoliticalNovosibirsk")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        .tariffs-political__card
+          #novosibirskHeadingThree.tariffs-political__card-header
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#novosibirskCollapseThree" aria-expanded="false" aria-controls="novosibirskCollapseThree")
+                | Mercedes-Benz E class W213
+          #novosibirskCollapseThree.collapse.tariffs-political__collapse(aria-labelledby="novosibirskHeadingThree" data-parent="#accordionTariffsPoliticalNovosibirsk")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+        .tariffs-political__card.tariffs-political__card_mb-40
+          #novosibirskHeadingFour.tariffs-political__card-header
+            h2
+              button.collapsed(type="button" data-toggle="collapse" data-target="#novosibirskCollapseFour" aria-expanded="false" aria-controls="novosibirskCollapseFour")
+                | Mercedes-Benz V class
+          #novosibirskCollapseFour.collapse.tariffs-political__collapse(aria-labelledby="novosibirskHeadingFour" data-parent="#accordionTariffsPoliticalNovosibirsk")
+            p Доступно для заказа: 27 автомобилей
+            p Год выпуска: 2019 г. | 2018 г. | 2017 г.
+            ul
+              li AMG пакет
+              li ЖК панель
+              li Панорамная крыша
+
+      +button-middle-gold-bg('button__animation-glare button__animation-glare_delay-1', 'button', 'Заказать автомобиль', 'button', 'modal', '#modalConsultation')

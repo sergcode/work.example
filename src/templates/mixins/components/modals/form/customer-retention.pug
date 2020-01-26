@@ -1,0 +1,68 @@
+mixin customer-retention
+  #modalCustomerRetention.modal.fade.bd-example-modal-xl.customer-retention(tabindex="-1" role="dialog" aria-labelledby="customerRetention" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered.modal-lg.customer-retention__modal-lg
+      .modal-content.customer-retention__wrapper
+        .customer-retention__content
+          h2.title.title__h2
+            | Получить консультацию
+          h5.title.title__h5.text__grey_two.mb-4
+            | Заполните форму и в течение 15 минут с Вами&nbsp;
+            br
+            | свяжется Ваш персональный менеджер
+          +five-stars('delimiter-five-stars__mb-61')
+          .customer-retention__form
+            .form.form_pr-0.style-form.mt-auto.clear
+              form#customerRetention.clear.form__theme.needs-validation(method='post' action='' role='form' novalidate name='customerRetention')
+                fieldset
+                  .form-row
+                    .col-lg-12.col-xl-12.form-head__input-container
+                      input#customerRetentionUsername.form-control.customer-retention__input-theme(
+                      type="text"
+                      placeholder=""
+                      form='customerRetention'
+                      autocomplete='off'
+                      value=""
+                      pattern='^[a-zA-ZА-Яа-яЁё ]+$'
+                      title='Имя может содержать только буквы.'
+                      name='username'
+                      required
+                      data-bind="retentionForm.name"
+                      )
+                      label.form-head__label-theme.text.text__middle_less(for="customerRetentionUsername")
+                        | Введите Ваше имя
+                      .invalid-tooltip
+                        | Это обязательное поле
+
+                    .col-lg-12.col-xl-12.form-head__input-container
+                      input#customerRetentionEmail.form-control.customer-retention__input-theme(
+                      type="text"
+                      placeholder=""
+                      value=""
+                      name='email'
+                      form='customerRetention'
+                      autocomplete='off'
+                      required
+                      data-bind="retentionForm.email"
+                      )
+                      label.form-head__label-theme.text.text__middle_less.form-head__label-theme(for="customerRetentionEmail")
+                        | Введите Ваш телефон или E-mail
+                      .invalid-tooltip.invalid-tooltip_delay_second
+                        | Это обязательное поле
+
+                .form-group
+                  .form-check
+                    input#invalidCheck.form-check-input(type="checkbox" value="" checked required)
+                    label.form-check-label(for="invalidCheck")
+                      | Подтверждая отправку формы Я соглашаюсь на обработку персональных данных и с&nbsp;
+                      a(href='https://rustransfer.org/docs/politika_konfidencialnosti.pdf' title='' target='_blank') политикой конфиденциальности
+                      | . Ни при каких обстоятельствах Ваши данные не будут переданы третьим лицам.
+
+                    .invalid-feedback
+                      | Это обязательное поле
+                hr
+                .customer-retention__button-group
+                  +button-big-gold-bg('', 'button', 'Получить консультацию', 'submit', 'button__animation-glare button__animation-glare_delay-1')
+                  +button-small-gold-border-close('', 'button__gold-border_animation-glare button__gold-border_delay-1 button__small_close text_gold', 'button', 'Закрыть', 'button', 'modal', 'Close')
+
+
+  .modal-backdrop.modal-backdrop_customer.fade.show

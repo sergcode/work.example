@@ -1,0 +1,334 @@
+mixin cities
+  #citiesModal.modal.cities-modal.fade(tabindex="-1" role="dialog" aria-labelledby="citiesModal" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered.modal-xl.cities-modal__container_lg(role="document")
+      .modal-content.cities-modal__modal-content
+        .cities-modal__modal-header
+          h2.title.title__h2.mb-4 Города обслуживания РФ
+          +five-stars('delimiter-five-stars__mb-114')
+
+        .cities-modal__modal-body.scrollbar-inner
+          .cities-modal__list
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Москва
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Санкт-Петербург
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Сочи
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Новосибирск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Владивосток
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Абакан
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Архангельск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Астрахань
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Барнаул
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Белгород
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Владивосток
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Владикавказ
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Владимир
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Волгоград
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Воронеж
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Горно-Алтайск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Грозный
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Екатеринбург
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Ижевск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Иркутск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Йошкар-Ола
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Казань
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Калининград
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Кемерово
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Киров
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Кострома
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Краснодар
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Красноярск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Махачкала
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Мурманск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Нальчик
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Нижний Новгород
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Новосибирск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Омск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Оренбург
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Пенза
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Пермь
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Петрозаводск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Ростов-на-Дону
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Рязань
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Самара
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Санкт-Петербург
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Саранск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Саратов
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Севастополь
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Симферополь
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Ставрополь
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Сыктывкар
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Тверь
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Томск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Тула
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Тюмень
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Улан-Удэ
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Ульяновск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Уфа
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Хабаровск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close")  Ханты-Мансийск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Чебоксары
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Челябинск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Черкесск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Чита
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Южно-Сахалинск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Якутск
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Ярославль
+            li
+              a.more-cities(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Другие города
+
+        hr
+
+        .cities-modal__modal-footer
+          a.title.title__h6.title_gold.cities-modal_ml-auto(data-toggle="modal" data-target="#countriesModal" data-dismiss="modal" aria-label="Close") Страны обслуживания
+          +button-small-gold-bg-close('', 'button__animation-glare button__animation-glare_delay-1 button__small_close text_white', 'button', 'Закрыть', 'button', 'modal', 'Close')
+
+mixin countries
+  #countriesModal.modal.countries-modal.fade(tabindex="-1" role="dialog" aria-labelledby="citiesModal" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered.modal-xl.countries-modal__container_lg(role="document")
+      .modal-content.countries-modal__modal-content
+        .countries-modal__modal-header
+          h2.title.title__h2.mb-4 Страны обслуживания
+          +five-stars('delimiter-five-stars__mb-114')
+
+        .countries-modal__modal-body.scrollbar-inner
+          .countries-modal__list
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Австралия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Австрия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Азербайджан
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Албания
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Андорра
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Аргентина
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Армения
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Бахрейн
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Бельгия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Болгария
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Босния и Герцеговина
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Бразилия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Великобритания
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Венгрия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Вьетнам
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Германия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Греция
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Грузия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Дания
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Египет
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Израиль
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Индия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Индонезия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Ирландия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Исландия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Испания
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Италия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Казахстан
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Канада
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Катар
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Кипр
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Киргизия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Китай
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Колумбия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Латвия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Литва
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Лихтенштейн
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Люксембург
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Малайзия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Мальдивы
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Марокко
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Мексика
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Молдавия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Монако
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Монголия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Мьянма
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Нидерланды
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Новая Зеландия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Норвегия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") ОАЭ
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Оман
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Польша
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Португалия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Республика Беларусь
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Республика Корея
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Россия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Румыния
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") США
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Сан-Марино
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Саудовская Аравия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Северная Македония
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Сербия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Сингапур
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Словакия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Словения
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Таджикистан
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Таиланд
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Тунис
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Туркмения
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Турция
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Узбекистан
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Украина
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Уругвай
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Филиппины
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Финляндия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Франция
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Хорватия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Черногория
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Чехия
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Чили
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Швейцария
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Швеция
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Эстония
+            li
+              a(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Япония
+            li
+              a.more-countries(data-toggle="modal" data-target="#modalConsultation" data-dismiss="modal" aria-label="Close") Другие страны
+
+        hr
+
+        .countries-modal__modal-footer
+          a.title.title__h6.title_gold.cities-modal_ml-auto(data-toggle="modal" data-target="#citiesModal" data-dismiss="modal" aria-label="Close") Города обслуживания РФ
+          +button-small-gold-bg-close('', 'button__small_close text_white', 'button', 'Закрыть', 'button', 'modal', 'Close')
+

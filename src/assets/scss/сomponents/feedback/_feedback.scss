@@ -1,0 +1,31 @@
+.feedback {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-auto-rows: auto;
+  &__email, &__callback {
+    a {
+      color: $white-one;
+      font-family: $verdana-light;
+      font-size: 18px;
+      position: relative;
+      align-content: center;
+      display: inline-block;
+      text-decoration: none;
+      span {
+        background-color: transparent;
+        transition: background-color .2s ease;
+        border-radius: 30px;
+        padding: 5px 15px;
+      }
+      &:hover {
+        text-decoration: none;
+        span {
+          background: $black-rgba-three;
+        }
+      }
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+}

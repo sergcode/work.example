@@ -1,0 +1,114 @@
+footer#footer.footer.footer__theme(role='contentinfo')
+  .container.container__customized_xl.container__customized_sm.footer__grid
+    .footer__col.footer__col_column.wow.fadeInRight(data-wow-delay='0.5s' data-wow-duration='0.4s')
+      a.footer__logo.footer__logo_mb-1-8(href='' title='Логотип Альбатрос БКТ' role='link')
+        +logo
+      p.footer__copy
+        | &copy;&nbsp;2016&nbsp;-
+        script.
+          var mdate = new Date(); document.write(mdate.getFullYear());
+        | ,&nbsp;Все права защищены
+        br
+        | ООО &laquo;Альбатрос - Бизнес Кар Трансфер&raquo;
+        br
+        span ИНН:&nbsp;
+        | 4205324613&nbsp;
+        br
+        span ОГРН:&nbsp;
+        | 1164205056278
+        br
+        span Р/с  40702810923060002329  АО "Альфа-Банк"
+      a.footer__political.footer__political_mt-auto(href='https://static.e-trans.me/albatros-bct.com/docs/politica_konfidencialnosti.pdf' target='_blank' title='Политика конфиденциальности' role='link')
+        p Политика конфиденциальности
+      a.footer__political(href='https://static.e-trans.me/docs/founding-documents/documents2018.zip' target='_blank' title='Скачать уставные документы' role='link')
+        p Уставные документы
+
+    .footer__col.wow.fadeInRight(data-wow-delay='0.6s' data-wow-duration='0.4s')
+      p.footer__title Контактная информация
+      ul.footer__phone
+        li
+          a.telephone(href='tel:88002501717' role='link' title='Сделать звонок') +7 (800) 250-1717
+            span Круглосуточно
+        li
+          a(href='tel:84952041718' role='link' title='Сделать звонок') +7 (495) 204-1718
+            span Москва
+        li
+          a(href='tel:88124093051' role='link' title='Сделать звонок') +7 (812) 409-3051
+            span Санкт-Петербург
+        li
+          a(href='tel:88622257056' role='link' title='Сделать звонок') +7 (862) 225-7056
+            span Сочи
+        li
+          a(href='tel:83832099261' role='link' title='Сделать звонок') +7 (383) 209-9261
+            span Новосибирск
+        li
+          a(href='tel:44 2 0386 81151' role='link' title='Сделать звонок') +44 2 0386 81151
+            span Лондон
+
+    .footer__col.wow.fadeInRight(data-wow-delay='0.7s' data-wow-duration='0.4s')
+      p.footer__title.footer__title_sm Контактный e-mail
+      ul.footer__feedback
+        li
+          a(href='mailto:24@e-trans.me' role='link')
+            span 24@e-trans.me
+      .footer__stretch
+        .footer__pay.footer__pay_desctop
+          p.footer__title.footer__title_md Способы оплаты
+          span
+            +visa
+          span
+            +mir
+          span
+            +mastercard
+    .footer__col.wow.fadeInRight(data-wow-delay='0.8s' data-wow-duration='0.4s')
+      .footer__row
+        .footer__stretch
+          .footer__networck.footer__networck_desctop
+            p.footer__title.footer__title_md Мы в социальных сетях
+            a(href='https://www.linkedin.com/groups/10497785/' title='Перейти в группу Альбатрос БКТ в Linkedin' target='_blank' role='link')
+              span
+                +linkedin-footer
+            a(href='https://vk.com/club106255826' title='Перейти в группу Альбатрос БКТ в Вконтакте' target='_blank' role='link')
+              span
+                +vk-footer
+            a(href='https://twitter.com/Albatros_taxi' title='Перейти в группу Альбатрос БКТ в Twitter' target='_blank' role='link')
+              span
+                +twitter-footer
+            a(href='https://www.instagram.com/albatros_bkt/' title='Перейти в группу Альбатрос БКТ в Instagram' target='_blank' role='link')
+              span
+                +instagram-footer
+            a(href='https://www.facebook.com/albatroc/?eid=ARDE1Nd1TXOJKL4Oyt2TRYS0L9hMSUrORke2FnhaT4W3BM6n6XRY4trzGyLSTUptRWcgpXmKcC8j2qrE' title='Перейти в группу Альбатрос БКТ в Facebook' target='_blank' role='link')
+              span
+                +facebook-footer
+
+      .footer__stretch
+        .footer__messengers.footer__messengers_desctop
+          p.footer__title.footer__title_md Месенджеры
+          a(href='viber://chat?number=+79131257777' title='Написать в Viber' target='_blank' role='link')
+            span
+              +viber
+          a(href='whatsapp://send?phone=+79131257777' title='Написать в Whatsapp' target='_blank' role='link')
+            span
+              +whatsapp
+          a(href='tg://resolve?domain=+79131257777' title='Написать в Telegram' target='_blank' role='link')
+            span
+              +telegram
+
+.bg__menu( title='Закрыть меню')
+
++cookie
+
++consultation
+
++success
+
++unsuccess
+
++cities
+
++countries
+
++customer-retention
+
+include ../../templates/includes/footer-scripts
+

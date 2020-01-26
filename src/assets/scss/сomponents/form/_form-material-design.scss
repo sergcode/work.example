@@ -1,0 +1,60 @@
+.form-material-design {
+
+  display: block;
+  grid-column: 2;
+  z-index: 1000;
+
+  fieldset {
+    padding: 0 0 20px 0;
+  }
+
+  &__form {
+
+    .form-row {
+
+      padding-bottom: 1rem;
+
+      .invalid-tooltip {
+
+        width: 40%;
+
+        @media only screen and (max-width: 991.98px) {
+          width: 50%;
+        }
+
+        @media only screen and (max-width: 920px) {
+          transform: translate(0, -130px);
+          left: 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        &:before {
+
+          @media only screen and (max-width: 920px) {
+            display: none;
+          }
+
+        }
+
+
+      }
+
+    }
+
+    .was-validated {
+
+      .form-control:invalid ~ .invalid-tooltip {
+
+        @media only screen and (max-width: 920px) {
+          transform: translate(0, 35px);
+        }
+
+      }
+
+    }
+
+  }
+
+}
+

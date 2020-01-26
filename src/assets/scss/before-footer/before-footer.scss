@@ -1,0 +1,9 @@
+.before-footer {
+  background: url("#{$static-img}before-footer/background-before-footer.jpg") no-repeat center / cover;
+  &__form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+
+  }
+}

@@ -1,0 +1,243 @@
+.customer-retention {
+
+  display: block;
+  z-index: -1000;
+
+  &__modal-lg {
+    @media (min-width: 992px) {
+      max-width: 872px;
+    }
+  }
+
+  &__wrapper {
+
+    padding: 64px 0 40px;
+    border-radius: 3px !important;
+    border: none !important;
+    box-shadow: 0 4px 4px $black-rgba-four;
+    position: relative;
+
+  }
+
+  &__content {
+
+    h2 {
+
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 30px;
+      position: relative;
+      display: block;
+      line-height: 1.3em;
+      padding: 0;
+
+      @media only screen and (max-width: 1199.98px) {
+        font-size: 25px;
+      }
+
+      @media only screen and (max-width: 991.98px) {
+        font-size: 20px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        padding: 0 20px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        font-size: 18px;
+        padding: 0 10px 0;
+      }
+
+      br {
+
+        @media only screen and (max-width: 991.98px) {
+          display: none;
+        }
+
+      }
+
+    }
+
+    p {
+
+      text-align: center;
+
+      @media only screen and (max-width: 991.98px) {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        font-size: 16px;
+      }
+
+      br {
+
+        @media only screen and (max-width: 991.98px) {
+          display: none;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__form {
+
+    padding: 0 58px 20px;
+
+    @media only screen and (max-width: 1199.98px) {
+      padding: 0 130px 37px;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+      padding: 0 40px 0;
+    }
+
+    @media only screen and (max-width: 360px) {
+      padding: 0 20px 0;
+    }
+
+    .form-row {
+
+      padding-bottom: 1rem;
+
+      .invalid-tooltip {
+
+        width: 40%;
+
+        @media only screen and (max-width: 991.98px) {
+          width: 50%;
+        }
+
+        @media only screen and (max-width: 920px) {
+          transform: translate(0, -130px);
+          left: 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        &:before {
+
+          @media only screen and (max-width: 920px) {
+            display: none;
+          }
+
+        }
+
+
+      }
+
+    }
+
+    .was-validated {
+
+      .form-control:invalid ~ .invalid-tooltip {
+
+        @media only screen and (max-width: 920px) {
+          transform: translate(0, 35px);
+        }
+
+      }
+
+    }
+
+  }
+
+  &__input-theme {
+
+    border-bottom: 1px solid $gold-one;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    padding-left: 0;
+    position: relative;
+    outline: none;
+    width: 100%;
+    background: none;
+    color: $black-one;
+    font-size: 18px;
+
+    &:focus {
+
+      box-shadow: none;
+      background: none;
+      border-bottom: 1px solid $gold-one;
+      color: $black-one;
+
+      ~ .form-head__label-theme {
+
+        transform: translate(-10%, -80%) scale(.8);
+
+      }
+
+    }
+
+    &:valid {
+
+      ~ .form-head__label-theme {
+
+        transform: translate(-10%, -80%) scale(.8);
+
+      }
+
+    }
+
+  }
+
+  .form-check-label {
+    padding-left: 51px;
+  }
+
+  .form-check-input {
+    margin-left: 0;
+  }
+
+  .form-check {
+    padding-bottom: 55px;
+    display: grid;
+    grid-template-columns: 0 100%;
+    grid-auto-rows: auto;
+    padding-left: 0;
+    a {
+      color: $black-one;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid $gold-one;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &__button-group {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    justify-items: center;
+  }
+
+  .jq-checkbox.focused {
+    border: 1px solid $gold-one;
+  }
+
+}
+
+.modal-backdrop_customer.fade.show {
+
+  display: block;
+  z-index: -10;
+  visibility: hidden;
+
+}

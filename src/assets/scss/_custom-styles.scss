@@ -1,0 +1,47 @@
+/* Default styles */
+@import './variables';
+@import './mixins/mixins';
+@import './fonts';
+@import './color-theme';
+@import './theme';
+@import './default';
+@import './jquery.form.styler/jquery.form.styler';
+@import './jquery.form.styler/jquery.form.styler.theme';
+@import './lightbox/lightbox';
+
+/* Components */
+@import './сomponents/jquery.scrollbar/jquery.scrollbar';
+@import './сomponents/button/button';
+@import './сomponents/hamburger';
+@import './сomponents/grid';
+@import './сomponents/header';
+@import './сomponents/typography';
+@import './сomponents/footer';
+@import './сomponents/feedback/feedback';
+@import './сomponents/tariffs/tariffs';
+@import './сomponents/owl.carousel.thanksgiving.letters/owl.carousel.thanksgiving.letters';
+
+/* Components Modal*/
+@import './сomponents/modal/form/consultation/consultation';
+@import './сomponents/modal/form/success-unsuccess/success-unsuccess';
+@import './сomponents/modal/form/customer-retention/customer-retention';
+@import './сomponents/modal/cities/cities';
+@import './сomponents/modal/countries/countries';
+@import './сomponents/modal/cookie';
+
+/* Components Form*/
+@import './сomponents/form/form-head';
+@import './сomponents/form/form-horizontal';
+@import './сomponents/form/form-material-design';
+
+/* Header-content style */
+@import './header-content/header-content';
+
+/* Body-content style */
+@import './class-auto/class-auto';
+@import './tariffs-political/tariffs-political';
+@import './our-service/our-service';
+@import './your-benefit/your-benefit';
+@import './reviews-customer/reviews-customer';
+@import './activity/activity';
+@import './before-footer/before-footer';

@@ -1,0 +1,151 @@
+.activity {
+  background-color: $white-one;
+  &__fotorama {
+    position: relative;
+
+    &_slide {
+      display: grid;
+      grid-template-columns: 42% 35%;
+      grid-auto-rows: auto;
+    }
+    &_img {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    &_text {
+      padding-left: 30px;
+      p {
+        line-height: 35px;
+      }
+    }
+    &_data {
+      position: absolute;
+      background-color: $gold-one;
+      top: 0;
+      right: 0;
+      color: $white-one;
+      padding: 20px 15px;
+      font-family: $francker-cyr-cond-regular;
+      text-transform: uppercase;
+    }
+    &_text-big {
+      font-size: 26px;
+    }
+    &_text-small {
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  }
+  &__form {
+    p.text {
+      padding-bottom: 55px;
+    }
+  }
+
+  .fotorama {
+    overflow: visible;
+    padding-bottom: 70px;
+    &__wrap {
+      padding-top: 100px;
+    }
+    &__nav-wrap {
+      position: absolute;
+      right: 0;
+      top: 32%;
+      margin-right: -10%;
+      transform: rotate(90deg);
+    }
+    &__nav {
+      &:before, &:after {
+        display: none;
+      }
+      &__frame--thumb {
+        transition: all .5s ease;
+        transform: scale(1);
+      }
+    }
+    &__thumb {
+      border: 1px solid $grey-five;
+    }
+    &__stage {
+      overflow: visible;
+    }
+    &__thumb-border {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+    }
+    &__arr {
+      top: 0;
+      margin-top: 0;
+      opacity: 1 !important;
+      right: 100px;
+      left: auto;
+      z-index: 10000000;
+      &--prev {
+        top: -14%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid $gold-one;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &:before {
+          content: url('data:image/svg+xml;utf8,<svg width="19" height="28" viewBox="0 0 19 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.399025 9.36175C0.0219396 9.7261 0.0219396 10.3325 0.399025 10.7096C0.763371 11.0739 1.36977 11.0739 1.73326 10.7096L8.56751 3.87533L8.56751 26.4274C8.56836 26.9531 8.98621 27.371 9.51192 27.371C10.0376 27.371 10.4691 26.9531 10.4691 26.4274L10.4691 3.87533L17.2906 10.7096C17.6677 11.0739 18.2749 11.0739 18.6384 10.7096C19.0155 10.3325 19.0155 9.72525 18.6384 9.36175L10.1863 0.909603C9.82191 0.532516 9.21552 0.532516 8.85202 0.909603L0.399025 9.36175Z" fill="burlywood"/></svg>');
+          z-index: 10000;
+          display: block;
+          margin-top: 5px;
+        }
+        &:hover {
+          &:before {
+            animation: arrow-up-anim-activity-in .5s ease-in-out infinite;
+          }
+        }
+        &:active {
+          background-color: transparent;
+        }
+      }
+      &--next {
+        top: auto;
+        bottom: -5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid $gold-one;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &:before {
+          content: url('data:image/svg+xml;utf8,<svg width="19" height="28" viewBox="0 0 19 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.399025 18.6381C0.0219396 18.2738 0.0219396 17.6674 0.399025 17.2903C0.763371 16.926 1.36977 16.926 1.73326 17.2903L8.56751 24.1246L8.56751 1.57247C8.56836 1.04676 8.98621 0.628906 9.51192 0.628906C10.0376 0.628906 10.4691 1.04676 10.4691 1.57247L10.4691 24.1246L17.2906 17.2903C17.6677 16.926 18.2749 16.926 18.6384 17.2903C19.0155 17.6674 19.0155 18.2746 18.6384 18.6381L10.1863 27.0903C9.82191 27.4674 9.21552 27.4674 8.85202 27.0903L0.399025 18.6381Z" fill="burlywood"/></svg>');
+          z-index: 10000;
+          margin-top: 5px;
+        }
+        &:hover {
+          &:before {
+            animation: arrow-down-anim-activity-in .5s ease-in-out infinite;
+          }
+        }
+        &:active {
+          background-color: transparent;
+        }
+      }
+    }
+
+  }
+  .fotorama__nav__frame--thumb.fotorama__active {
+    transform: scale(1.1);
+    transition: all .3s ease;
+  }
+
+}
+
